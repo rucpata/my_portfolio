@@ -7,11 +7,3 @@ function showTech(){
 
 proj.addEventListener("mouseover", showTech);
 
-
-let item = document.getElementById('head-item')
-
-function change(){
-    item.style.color = 'pink';
-}
-
-item.addEventListener('mouseover', change);

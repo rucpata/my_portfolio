@@ -21,8 +21,12 @@ li{
     list-style: none;
 }
 
+ul{
+    padding-inline-start: 0;
+    margin-block-start: 0;
+}
 /*Nav*/
-nav ul, .techno_list{
+.menu{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -70,7 +74,6 @@ nav ul, .techno_list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .project {
@@ -83,8 +86,6 @@ nav ul, .techno_list{
     transition: all 0.5s 0.3s ease-in-out;
     position: relative;
 }
-
-
 
 .project:hover{
     opacity: 1;
@@ -109,27 +110,28 @@ nav ul, .techno_list{
 /* Technologie z danego projektu */
 .pro_techno{
     position: absolute;
-    align-self: center;
     background-color:aliceblue;  
-    opacity: 0.8;
-    align-items: center;
+    opacity: 0.9;
+    height: auto;
     bottom: 0;
     left: 0;
     right: 0;
-    display: none;
+    padding: 5% 2%;
+    margin-block-start: 0;
 }
 
 .techno_list{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    padding: 0;
 }
 
 .techno-item{
-    margin: 10px 20px;
-    padding: 5px 5px;
+    max-height: 64px;
+    min-height: 20px;
+    max-width: 64px;
+    min-height: 20px;
+    margin: 5px auto; 
 }
 
 h4{
@@ -139,3 +141,26 @@ h4{
     font-weight: normal;
 }
 
+.techno_list_all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 6%;
+}
+
+
+
+.item-tech{
+    max-height: 64px;
+    min-height: 20px;
+    max-width: 64px;
+    min-height: 20px;
+    margin: 20px 20px;
+    padding: 15px 15px;
+    transition: all 0.3s 0.2s ease-in-out;
+    
+}
+
+.item-tech:hover{
+    border-bottom: 10px solid seashell;
+}
