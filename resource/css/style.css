@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
-body{
+body {
     background-color: #1B2528;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -8,25 +8,31 @@ body{
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 100;
     line-height: 150%;
 }
 
-h2{
+h2 {
     width: 100%;
 }
 
-li{
+li {
     list-style: none;
 }
 
-ul{
+ul {
     padding-inline-start: 0;
     margin-block-start: 0;
 }
+
 /*Nav*/
-.menu{
+.menu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -34,42 +40,51 @@ ul{
     margin: 10px 30px;
 }
 
-.item-nav{
+.item-nav {
     list-style: none;
     padding: 10px 2%;
     margin-top: 10px;
+    transition: all 0.1s ease;
+}
+.item-nav:hover{
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
-.item-nav a{
+
+
+.item-nav a {
     text-decoration: none;
     color: white;
 }
 
 /*Hero*/
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, 500px);
     background-image: url(../img/markus-spiske-FXFz-sW0uwo-unsplash.jpg);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.hero-text{
+.hero-text {
     grid-column: 1/2;
     grid-row: 1;
     width: 80%;
     height: auto;
     justify-self: end;
     text-align: right;
-    align-self: center;   
-    letter-spacing: 1px; 
+    align-self: center;
+    letter-spacing: 1px;
     padding: 0 5%;
 }
 
 /* Main */
-.projects, .technology{
+#projects,
+#technology,
+#contact {
     margin: 30px 5%;
     display: flex;
     flex-wrap: wrap;
@@ -83,17 +98,17 @@ ul{
     margin: 20px 20px;
     opacity: 0.7;
     background-color: white;
-    transition: all 0.5s 0.3s ease-in-out;
+    transition: all 0.5s linear;
     position: relative;
 }
 
-.project:hover{
+.project:hover {
     opacity: 1;
     width: 470px;
-    height: 470px; 
+    height: 470px;
 }
 
-.project-item{
+.project-item {
     object-fit: cover;
     object-position: 100% 0;
     width: 100%;
@@ -101,16 +116,17 @@ ul{
     position: absolute;
 }
 
-.project-item-app{
+.project-item-app {
     object-fit: contain;
     object-position: 100% 0;
     width: 100%;
     height: auto;
 }
+
 /* Technologie z danego projektu */
-.pro_techno{
+.pro_techno {
     position: absolute;
-    background-color:aliceblue;  
+    background-color: aliceblue;
     opacity: 0.9;
     height: auto;
     bottom: 0;
@@ -120,47 +136,43 @@ ul{
     margin-block-start: 0;
 }
 
-.techno_list{
+.techno_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.techno-item{
-    max-height: 64px;
+.techno-item {
+    max-height: 50px;
     min-height: 20px;
-    max-width: 64px;
+    max-width: 50px;
     min-height: 20px;
-    margin: 5px auto; 
+    margin: 5px auto;
 }
 
-h4{
+h4 {
     color: #1B2528;
     text-align: center;
     font-size: 1.2rem;
     font-weight: normal;
 }
 
-.techno_list_all{
+.techno_list_all {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 5% 6%;
 }
 
+h2 {
+    border-bottom: 5px solid gray;
+}
 
-
-.item-tech{
+.item-tech {
     max-height: 64px;
     min-height: 20px;
     max-width: 64px;
     min-height: 20px;
     margin: 20px 20px;
     padding: 15px 15px;
-    transition: all 0.3s 0.2s ease-in-out;
-    
-}
-
-.item-tech:hover{
-    border-bottom: 10px solid seashell;
 }
